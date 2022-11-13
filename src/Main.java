@@ -20,11 +20,19 @@ public class Main {
         }
         System.out.print(distance[2] + " ");
         int [] numbersFibonacci = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
-        for (int i = 0; i < numbersFibonacci.length; i++){
+        int count = 0;
+        for (int element : numbersFibonacci){
+            if ( count < numbersFibonacci.length - 1){
+                System.out.print(element + ", ");
+                count ++;
+            } else System.out.println(numbersFibonacci[count]);
+        }
+        /* 3й способ:
+            for (int i = 0; i < numbersFibonacci.length; i++){
             if (i == numbersFibonacci.length - 1){
                 System.out.println(numbersFibonacci[i]);
             } else System.out.print(numbersFibonacci[i] + ",");
-        }
+        }*/
         /* другой способ:
             for (int i = 0; i < numbersFibonacci.length - 1; i++){
             System.out.print(numbersFibonacci[i] + ",");
