@@ -91,6 +91,6 @@ public class Main {
                 System.out.print(three[i] + ",");
             }
         }
-        System.out.println(three[three.length - 1] + " ");
+        System.out.println(three[three.length - 1]);
     }
 }
